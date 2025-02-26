@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="Icon.png" type="image/png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wise Voice Agent</title>
@@ -44,6 +45,12 @@
       text-align: center;
       opacity: 0.9;
     }
+    .instruction-large {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    } 
     .form-group {
       display: flex;
       align-items: center;
@@ -105,14 +112,18 @@
   </style>
 </head>
 <body>
-  <header>Wise Voice Agent</header>
+  <header>
+    <img src="Icon.png" alt="Logo" style="width:40px; vertical-align:middle; margin-right:10px;">
+    Wise Voice Agent
+  </header>
   <div class="container">
+    <div class="instruction-large">Please enter your mobile number to receive a call from us.</div>
     <div class="instruction">Please wait up to 3 minutes to receive the call. Since Twilio is in trial mode, please press any key to start the Wise Voice agent.</div>
     <form id="callForm" action="/make-call" method="POST" class="form-group">
       <input
         type="tel"
         name="phone_number"
-        placeholder="Enter phone number with ISD code (e.g. +1 555-123-4567)"
+        placeholder="Enter ISD code also (e.g. +15551234567)"
         required
       />
       <button type="submit">Submit</button>
