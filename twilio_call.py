@@ -1,4 +1,3 @@
-# make_call.py
 from flask import Flask, request, redirect, render_template
 import os
 from twilio.rest import Client
