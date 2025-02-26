@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="Icon.png" type="image/png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wise Voice Agent</title>
@@ -117,7 +116,8 @@
   </header>
   <div class="container">
     <div class="instruction-large">Please enter your mobile number to receive a call from us.</div>
-    <div class="instruction">Please wait up to 3 minutes to receive the call. Since Twilio is in trial mode, please press any key to start the Wise Voice agent.</div>
+    <div class="instruction">Please wait up to 3 minutes to receive the call.</div>
+    <div class="instruction">Once you receive the call, since Twilio API is in trial mode, please press any key to start the Wise Voice agent.</div>
     <form id="callForm" action="/make-call" method="POST" class="form-group">
       <input
         type="tel"
